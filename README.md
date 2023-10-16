@@ -70,7 +70,7 @@ Watcher exposes 3 events: 'new entries', 'stop' and 'error'.
 ## Changes from datyayu's script
 I really didn't spend much time on this, but here's all the small changes I made:
 * Switched from `parse-rss` to `rss-parser` (fixes 504 returns)
-* Removed some useless fucntions
+* Removed some useless functions
 * The Watcher constructer takes an Object instead of 2 values
 * Will error out if a non-number is passed for an interval
 * The request (entries fetching) function is now nested in the constructor
