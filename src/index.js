@@ -1,5 +1,5 @@
-import {EventEmitter} from 'events';
-import Parser from 'rss-parser';
+const { EventEmitter } = require('events');
+const Parser = require('rss-parser';
 const prs = new Parser();
 
 class Watcher extends EventEmitter {
@@ -93,4 +93,4 @@ class Watcher extends EventEmitter {
   }
 }
 
-export default Watcher;
+module.exports = Watcher;
