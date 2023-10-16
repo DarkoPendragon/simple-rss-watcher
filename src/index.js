@@ -1,5 +1,5 @@
 const { EventEmitter } = require('events');
-const Parser = require('rss-parser';
+const Parser = require('rss-parser');
 const prs = new Parser();
 
 class Watcher extends EventEmitter {
