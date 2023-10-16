@@ -1,0 +1,25 @@
+{
+  "name": "simple-rss-watcher",
+  "version": "1.0.0",
+  "description": "Fixed and improved feed-watcher package from datyayu",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rss",
+    "feed-watcher",
+    "watcher",
+    "rss-watch",
+    "rss-feed"
+  ],
+  "author": "Arturo Coronel <aoitsu3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarkoPendragon/simple-rss-watcher.git"
+  }
+}
