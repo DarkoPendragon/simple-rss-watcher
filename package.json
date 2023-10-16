@@ -1,6 +1,7 @@
 {
   "name": "simple-rss-watcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "description": "Fixed and improved feed-watcher package from datyayu",
   "main": "./src/index.js",
   "scripts": {
