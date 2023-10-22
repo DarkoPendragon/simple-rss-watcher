@@ -1,5 +1,6 @@
 # simple-rss-watcher
-simple-rss-watcher is a rss watcher based on <a href="https://github.com/yayudev/feed-watcher#readme" target="_blank">datyayu's improved rss-watcher</a>, which fixes constant 504 returns and (slightly) optimizes the 8+ year old code.
+simple-rss-watcher is a rss watcher based on <a href="https://github.com/yayudev/feed-watcher#readme" target="_blank">datyayu's improved rss-watcher</a>, which fixes constant 504 returns and (slightly) optimizes the 8+ year old code.  
+If you need help or want to suggest something, you can join [my Discord server](https://discord.gg/MYuWuQq49H).
 
 ## Installation
 You can install simple-rss-watcher by using:
@@ -9,7 +10,7 @@ You can install simple-rss-watcher by using:
 
 ## Usage
 A basic watcher can be created using:
-```
+```js
   var Watcher  = require('simple-rss-watcher'),
   var rssUrl   = 'http://lorem-rss.herokuapp.com/feed?unit=second&interval=5'
 
@@ -44,13 +45,13 @@ A basic watcher can be created using:
 
 ### Options
 If you want to change the watcher config after creating it, you can use watcher.config():
-```
+```js
   watcher.config({ feedUrl: feed, interval: 60 })
 ```
 
 ### Events
 Watcher exposes 3 events: 'new entries', 'stop' and 'error'.
-```
+```js
   // Returns an array of entry objects founded since last check
   watcher.on('new entries', (entries) => {
     console.log(entries)

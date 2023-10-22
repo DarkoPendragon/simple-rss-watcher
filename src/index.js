@@ -30,16 +30,13 @@ class Watcher extends EventEmitter {
     });
   }
 
-  // Check all entries on the feed.
-  // checkAll() {
-  //   return request(this.feedUrl);
-  // }
-  // No idea why this was used instead of nesting 'request' and calling that
-
   // Set up the watcher.
   config(cfg) {
-    this.feedUrl = cfg?.feedUrl || this.feedUrl;
-    this.interval = cfg?.interval || this.interval;
+    return new Promise((resolve, reject) => {
+      this.feedUrl = cfg?.feedUrl || this.feedUrl;
+      this.interval = cfg?.interval || this.interval;
+      resolve(this);
+    });
   }
 
   // Start watching.
